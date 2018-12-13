@@ -32,7 +32,7 @@
 
 %Parameters for scenario (Modify these) ###############################################################################################################################################################################
     %set information about domain of simulation@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        SCENARIO='scenario_sphere6.png'; %<--- file (image) that is scenario for navier stokes fluid simulation
+        SCENARIO='scenario_sphere3.png'; %<--- file (image) that is scenario for navier stokes fluid simulation
         domainX=2; % length of domain (x-axis) [unit: meters] 
         xinc=200; %number of nodes across x-component of domain (number of nodes from x=0 to x=domainX); where dx=domainX/xinc (=dy=dn)
         dt=0.0015; %set set delta time [unit: seconds]
@@ -42,7 +42,7 @@
         velxi=1; %x-component velocity of region with constant velocity (regions coloured red in SCENARIO)   [unit: meters/second]
                    %[velxi>0,velocity has vector +x with mag abs(velxi) and velxi<0, vel has vector -x with mag of abs(velxi)]
         dens=1; %density  [unit: kg/m^3] , water(pure)=1000 blood=1025 air~1 
-        mu=1/1000; %dynamic viscosity [kg/(m*s)]
+        mu=1/500; %dynamic viscosity [kg/(m*s)]
         
     %Poisson Pressure solver parameters!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         error=0.001; %set tolerance of error for convergence poisson solver of Pressure field (good value to start with is 0.001; which is for most incompressible applications)
